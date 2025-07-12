@@ -1,0 +1,191 @@
+/* Allgemeine Stile */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation */
+/* Navigation (Taskleiste) */
+nav {
+    background-color: #2c3e50;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;  /* Links in neue Zeilen umbrechen, wenn nötig */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    white-space: nowrap; /* Verhindert das Umbrechen von Text in den Links */
+}
+
+
+nav a:hover {
+    background-color: #34495e;
+    border-radius: 5px;
+}
+
+/* Damit der Inhalt nicht hinter der Taskleiste verschwindet */
+body {
+    padding-top: 60px;
+}
+
+/* Hauptcontainer */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Gruppen-Anzeige */
+.group {
+    border-bottom: 2px solid #ddd;
+    padding: 15px 0;
+}
+
+.group img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.group h2 {
+    color: #2c3e50;
+}
+
+.group p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Formulare */
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+input, textarea, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #2c3e50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #34495e;
+}
+/* Übersichtliche Kalenderausgabe – angepasst ans Farbambiente */
+.calendar-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.calendar-table th {
+    background-color: #2c3e50; /* Dunkelblau statt Grün */
+    color: white;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+.calendar-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    background-color: #ffffff;
+    vertical-align: top;
+}
+
+.calendar-table tr {
+    transition: background-color 0.3s ease;
+}
+
+.calendar-table tr:hover {
+    background-color: #f0f0f0;
+    cursor: default;
+}
+
+.calendar-table tr:nth-child(even) {
+    background-color: #2c3e50;
+}
+
+.calendar-table-container {
+    max-width: 900px;
+    margin: auto;
+    overflow-x: auto;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: ##2c3e50;
+}
+
+.calendar-table td:first-child {
+    font-weight: bold;
+    color: #2c3e50; /* Dunkelblau statt Grün */
+}
+
+.post {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.post h2 {
+    margin-top: 0;
+}
+
+.post-image {
+    max-width: 100%;
+    height: auto;
+    margin: 5px 0;
+}
+
+.post-date {
+    color: #777;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+.delete-button {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #d9534f;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.delete-button:hover {
+    background-color: #c9302c;
+}
