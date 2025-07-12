@@ -1,9 +1,0 @@
--manage calender
--benutzerkonto angucken und z.b. passwort ändern
--testen
-
-
-
--gucken wie das ohne localhost geht
--anwenden
--abschicken
